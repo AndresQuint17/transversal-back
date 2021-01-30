@@ -30,7 +30,7 @@ public class ProductColorController {
 		return service.listarPorId(id);
 	}
 	
-	@PostMapping
+	@PostMapping("/Save")
 	public ProductColor registrar(@RequestBody ProductColor productColor){
 		return service.registrar(productColor);
 	}

@@ -10,28 +10,28 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.productcatalog.model.ProductSize;
-import com.productcatalog.service.IProductSizeService;
+import com.productcatalog.model.Supplier;
+import com.productcatalog.service.ISupplierService;
 
 @RestController
-@RequestMapping("/ProductSize")
-public class ProductSizeController {
+@RequestMapping("/Supplier")
+public class SupplierController {
 
 	@Autowired
-	private IProductSizeService service;
+	private ISupplierService service;
 	
 	@GetMapping
-	public List<ProductSize> listar(){
+	public List<Supplier> listar(){
 		return service.listar();
 	}
 	
 	@GetMapping("/{id}")
-	public ProductSize listarPorId(@PathVariable("id") Integer id) {
+	public Supplier listarPorId(@PathVariable("id") Integer id) {
 		return service.listarPorId(id);
 	}
 	
 	@PostMapping("/Save")
-	public ProductSize registrar(@RequestBody ProductSize productSize){
-		return service.registrar(productSize);
+	public Supplier registrar(@RequestBody Supplier supplier){
+		return service.registrar(supplier);
 	}
 }

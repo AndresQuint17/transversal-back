@@ -19,7 +19,7 @@ public class Category {
 	private String categoryName;
 	@Column(name = "categorydescription")
 	private String categoryDescription;
-	@Column(name = "picture")
+	@Column(name = "picture", nullable = true)
 	private byte[] picture;
 	
 	public int getCategoryId() {

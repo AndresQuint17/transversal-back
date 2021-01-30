@@ -31,11 +31,6 @@ public class CategoryServiceImpl implements ICategoryService {
 	}
 
 	@Override
-	public Category listarId(String id) {
-		return null;
-	}
-
-	@Override
 	public List<Category> listar() {
 		return dao.findAll();
 	}

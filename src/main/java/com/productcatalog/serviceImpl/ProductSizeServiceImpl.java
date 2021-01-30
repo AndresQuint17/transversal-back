@@ -31,11 +31,6 @@ public class ProductSizeServiceImpl implements IProductSizeService {
 	}
 
 	@Override
-	public ProductSize listarId(String id) {
-		return null;
-	}
-
-	@Override
 	public List<ProductSize> listar() {
 		return dao.findAll();
 	}
