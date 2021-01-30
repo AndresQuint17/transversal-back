@@ -30,7 +30,7 @@ public class CategoryController {
 		return service.listarPorId(id);
 	}
 	
-	@PostMapping("/save")
+	@PostMapping("/Save")
 	public Category registrar(@RequestBody Category category){
 		return service.registrar(category);
 	}

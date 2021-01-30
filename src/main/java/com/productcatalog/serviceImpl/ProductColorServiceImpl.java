@@ -31,11 +31,6 @@ public class ProductColorServiceImpl implements IProductColorService {
 	}
 
 	@Override
-	public ProductColor listarId(String id) {
-		return null;
-	}
-
-	@Override
 	public List<ProductColor> listar() {
 		return dao.findAll();
 	}
