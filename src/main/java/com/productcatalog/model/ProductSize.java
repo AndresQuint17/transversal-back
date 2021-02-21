@@ -24,10 +24,10 @@ public class ProductSize {
 	public void setProductSizeId(int productSizeId) {
 		this.productSizeId = productSizeId;
 	}
-	public String getColor() {
+	public String getSize() {
 		return size;
 	}
-	public void setColor(String size) {
+	public void setSize(String size) {
 		this.size = size;
 	}
 	

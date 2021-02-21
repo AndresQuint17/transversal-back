@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.productcatalog.model.Supplier;
 import com.productcatalog.service.ISupplierService;
 
-@CrossOrigin(origins = "http://localhost:4200/%22")
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/Supplier")
 public class SupplierController {

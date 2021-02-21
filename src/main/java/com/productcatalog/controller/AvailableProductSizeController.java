@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.productcatalog.model.AvailableProductSize;
 import com.productcatalog.service.IAvailableProductSizeService;
 
-@CrossOrigin(origins = "http://localhost:4200/%22")
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/AvailableProductSize")
 public class AvailableProductSizeController {

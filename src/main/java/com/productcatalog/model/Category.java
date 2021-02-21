@@ -3,7 +3,10 @@ package com.productcatalog.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.Type;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -19,7 +22,9 @@ public class Category {
 	private String categoryName;
 	@Column(name = "categorydescription")
 	private String categoryDescription;
+	@Lob
 	@Column(name = "picture", nullable = true)
+	@Type(type="org.hibernate.type.BinaryType")
 	private byte[] picture;
 	
 	public int getCategoryId() {
