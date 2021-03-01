@@ -26,7 +26,9 @@ public class PlanPagosServiceImpl implements IPlanPagosService {
 			int descuento = equipoFinanciado.getDescuento();
 
 			if (descuento > 0 && descuento <= 100) {
-				valorEquipo = valorEquipo * ((100 - descuento) / 100);
+				double porcentaje = 100 - descuento;
+				porcentaje = porcentaje /100;
+				valorEquipo = valorEquipo * porcentaje;
 
 				if (pagoInicial > 0) {
 					valorEquipo = valorEquipo - pagoInicial <= 0 ? valorEquipo : valorEquipo - pagoInicial;
